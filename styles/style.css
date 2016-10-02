@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400");
 @import url("https://fonts.googleapis.com/css?family=Oswald:400");
 
-* { box-sizing: border-box;}
+* { box-sizing: border-box; outline: none;}
 html { height: 100%;}
 body { height: 100%; margin: 0px; background-color: #ddd; font-family: "Roboto"; font-size: 0px; color: #333;}
 input, textarea { padding: 0px; outline: none; box-shadow: none; font-family: "Roboto"; font-size: 16px;}
@@ -13,10 +13,18 @@ a { color: #006df0; text-decoration: none;}
 .max_width { display: block; max-width: 1024px; margin: auto;}
 
 #main_header { position: relative; width: 100%; height: 64px; border-bottom: 1px solid #b71c1c; background-color: #e53935; overflow: hidden;}
-	#main_header > .max_width { height: 64px; padding: 0px 16px;}
-		#main_header > .max_width > h1 { line-height: 64px; font-size: 32px; color: #fff;}
+	#main_header > .max_width { height: 64px;}
+		#main_header > .max_width > h1 { display: inline-block; height: 64px; line-height: 64px; font-size: 32px;}
+			#main_header > .max_width > h1 > a { display: block; padding: 0px 16px; color: #fff;}
 
 #main_nav { width: 100%; height: 32px; border-bottom: 1px solid #b71c1c; box-shadow: 0px 0px 4px #333; background-color: #d32f2f;}
 	#main_nav > .max_width { height: 32px; border-left: 1px solid #b71c1c;}
 		#main_nav > .max_width > a { display: inline-block; height: 32px; line-height: 32px; padding: 0px 16px; border-right: 1px solid #b71c1c; font-size: 16px; color: #eee; transition: all 250ms ease;}
 		#main_nav > .max_width > a:hover { background-color: #c62828; color: #fff;}
+
+#main { }
+	#main > .view { }
+		#main > .view > section { }
+			#main > .view > section > .max_width { padding: 16px;}
+				#main > .view > section > .max_width > h2 { font-size: 24px;}
+				#main > .view > section > .max_width > p { margin-top: 8px; font-size: 16px;}
