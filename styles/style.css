@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
 @import url("https://fonts.googleapis.com/css?family=Oswald:400");
 
 * { box-sizing: border-box; outline: none;}
@@ -35,8 +35,26 @@ a { color: #006df0; text-decoration: none;}
 	#main > .view {}
 		#main > .view > section {}
 			#main > .view > section > .max_width { padding: 16px;}
+			#main > .view > section > .max_width.welcome { margin-bottom: 32px; border-bottom: 1px solid #ccc;}
 				#main > .view > section > .max_width > h2 { font-size: 24px;}
 				#main > .view > section > .max_width > p { margin-top: 16px; font-size: 16px;}
+			#main > .view > section > article { margin-bottom: 32px; background-color: #fff; box-shadow: 0px 0px 2px #777;}
+				#main > .view > section > article > h3 { margin: 0px; font-size: 20px;}
+				#main > .view > section > article > .infos {}
+					#main > .view > section > article > .infos > p { display: inline-block; margin-right: 16px; font-size: 14px; color: #e57373;}
+				#main > .view > section > article > .separator { border-top: 1px solid #eee; margin: 16px 0px;}
+				#main > .view > section > article > .content {}
+					#main > .view > section > article > .content > img { max-width: 256px;}
+					#main > .view > section > article > .content > p { margin-top: 16px; font-size: 16px;}
+					#main > .view > section > article > .content > p.indent { text-indent: 32px;}
+						#main > .view > section > article > .content > p > .bold { font-weight: 500;}
+					#main > .view > section > article > .content > ul { padding: 0px;}
+						#main > .view > section > article > .content > ul > li { margin-top: 8px;}
+							#main > .view > section > article > .content > ul > li > a { font-size: 16px;}
+
+#home_view {}
+
+#tutorials_view {}
 
 @media (min-width: 512px)
 {
