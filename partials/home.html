@@ -43,88 +43,14 @@
 					<li><a href="https://www.libsdl.org/credits.php" target="_blank">Credits et remerciements</a></li>
 				</ul>
 			</div>
-			<div class="comments">
+
+			<div class="comments" ng-controller="DisqusController as disqus">
 				<div id="disqus_thread"></div>
-				<script>
-					var disqus_config = function(){
-						this.page.url = "http://sdldev.github.io";
-						this.page.identifier = "home";
-					};
-					(function(){
-						var d = document, s = d.createElement('script');
-						s.src = '//sdldev.disqus.com/embed.js';
-						s.setAttribute('data-timestamp', +new Date());
-						(d.head || d.body).appendChild(s);
-					})();
-				</script>
-			</div>
-		</article>
-
-		<article class="max_width">
-			<h3>Introduction a la SDL2</h3>
-			<div class="infos">
-				<p class="date">4 octobre 2016</p><p class="author">Kamipown</p>
-			</div>
-			<div class="separator"></div>
-			<div class="content">
-				<img src="img/sdl_logo.png">
-				<p class="indent">
-					La SDL est comme son nom l'indique (Simple DirectMedia Layer) une bibliotheque permettant l'acces a bas niveau aux medias d'un appareil, a savoir:
-				</p>
-				<p>
-					<span class="bold">Ecrans</span>, <span class="bold">Claviers</span>, <span class="bold">Souris</span>, <span class="bold">Manettes</span> et <span class="bold">Audio</span> (Grace a OpenGL et Direct3D).
-				</p>
-				<p class="indent">
-					Je dis appareil et pas ordinateur, car en plus de fonctionner sous <span class="bold">Windows</span>, <span class="bold">Mac OS X</span> et <span class="bold">Linux</span>, la SDL peut egalement etre utilisee sous <span class="bold">iOS</span> et <span class="bold">Android</span>.
-				</p>
-				<p>
-					Cette bibliotheque est ecrite en C et fonctionne nativement en C++, mais pour faire encore mieux, celle-ci dispose de bindings vers les langages de programmations suivants:<br/>
-					C#, Python, Lua, OCaml, Ada et Pascal.
-				</p>
-				<p>
-					Pour finir, vous devez savoir que la SDL est distribuee sous la <a href="http://www.gzip.org/zlib/zlib_license.html" target="_blank">licence zlib</a>, qui permet son acces libre pour n'importe quelle utilsiation.
-				</p>
-				<p>
-					Je vous invite a en apprendre d'avantage sur la SDL a travers les liens suivants:
-				</p>
-				<ul>
-					<li><a href="https://www.libsdl.org/" target="_blank">Site officiel de la SDL</a></li>
-					<li><a href="https://www.libsdl.org/credits.php" target="_blank">Credits et remerciements</a></li>
-				</ul>
-			</div>
-		</article>
-
-		<article class="max_width">
-			<h3>Introduction a la SDL2</h3>
-			<div class="infos">
-				<p class="date">4 octobre 2016</p><p class="author">Kamipown</p>
-			</div>
-			<div class="separator"></div>
-			<div class="content">
-				<img src="img/sdl_logo.png">
-				<p class="indent">
-					La SDL est comme son nom l'indique (Simple DirectMedia Layer) une bibliotheque permettant l'acces a bas niveau aux medias d'un appareil, a savoir:
-				</p>
-				<p>
-					<span class="bold">Ecrans</span>, <span class="bold">Claviers</span>, <span class="bold">Souris</span>, <span class="bold">Manettes</span> et <span class="bold">Audio</span> (Grace a OpenGL et Direct3D).
-				</p>
-				<p class="indent">
-					Je dis appareil et pas ordinateur, car en plus de fonctionner sous <span class="bold">Windows</span>, <span class="bold">Mac OS X</span> et <span class="bold">Linux</span>, la SDL peut egalement etre utilisee sous <span class="bold">iOS</span> et <span class="bold">Android</span>.
-				</p>
-				<p>
-					Cette bibliotheque est ecrite en C et fonctionne nativement en C++, mais pour faire encore mieux, celle-ci dispose de bindings vers les langages de programmations suivants:<br/>
-					C#, Python, Lua, OCaml, Ada et Pascal.
-				</p>
-				<p>
-					Pour finir, vous devez savoir que la SDL est distribuee sous la <a href="http://www.gzip.org/zlib/zlib_license.html" target="_blank">licence zlib</a>, qui permet son acces libre pour n'importe quelle utilsiation.
-				</p>
-				<p>
-					Je vous invite a en apprendre d'avantage sur la SDL a travers les liens suivants:
-				</p>
-				<ul>
-					<li><a href="https://www.libsdl.org/" target="_blank">Site officiel de la SDL</a></li>
-					<li><a href="https://www.libsdl.org/credits.php" target="_blank">Credits et remerciements</a></li>
-				</ul>
+				<dir-disqus disqus-shortname="kamipown"
+					disqus-identifier="home"
+					disqus-title="introduction"
+					disqus-url="https://sdldev.github.io/#/"
+				></dir-disqus>
 			</div>
 		</article>
 	</section>
