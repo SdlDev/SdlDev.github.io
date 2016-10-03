@@ -43,6 +43,21 @@
 					<li><a href="https://www.libsdl.org/credits.php" target="_blank">Credits et remerciements</a></li>
 				</ul>
 			</div>
+			<div class="comments">
+				<div id="disqus_thread"></div>
+				<script>
+					var disqus_config = function(){
+						this.page.url = "http://sdldev.github.io";
+						this.page.identifier = "home";
+					};
+					(function(){
+						var d = document, s = d.createElement('script');
+						s.src = '//sdldev.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+			</div>
 		</article>
 
 		<article class="max_width">
@@ -76,20 +91,6 @@
 					<li><a href="https://www.libsdl.org/" target="_blank">Site officiel de la SDL</a></li>
 					<li><a href="https://www.libsdl.org/credits.php" target="_blank">Credits et remerciements</a></li>
 				</ul>
-
-				<div id="disqus_thread"></div>
-				<script>
-				var disqus_config = function(){
-				    this.page.url = "http://sdldev.github.io";  // Replace PAGE_URL with your page's canonical URL variable
-				    this.page.identifier = "home"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-				};
-				(function(){
-				    var d = document, s = d.createElement('script');
-				    s.src = '//sdldev.disqus.com/embed.js';
-				    s.setAttribute('data-timestamp', +new Date());
-				    (d.head || d.body).appendChild(s);
-				})();
-				</script>
 			</div>
 		</article>
 
